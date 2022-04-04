@@ -1,0 +1,5 @@
+export const INCREMENT="incrementcounter"
+export const DECREMENT="decrementcounter"
+export const RESET="resetcounter"
+export const AMOUNT_DEPOSIT="deposit" 
+export const RESET_AMOUNT="resetamount"

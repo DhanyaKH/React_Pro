@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import counter_reducer from './reducers';
+import { createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={createStore(counter_reducer,composeWithDevTools())}>
     <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
